@@ -16,8 +16,8 @@
   --first-color-alt: hsl(var(--hue-color), 62%, 35%);
   --title-color: hsl(var(--hue-color), 62%, 40%);
   --text-color: hsl(var(--hue-color), 22%, 30%);
-  --text-color-light: hsl(var(--hue-color), 22%, 100%);
-  --input-color: hsl(var(--hue-color), 30%, 97%);
+  --text-color-light: hsl(var(--hue-color), 22%, 75%);
+  --input-color: hsl(var(--hue-color), 30%, 95%);
   --body-color: hsl(var(--hue-color), 98%, 99%);
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 10%, 90%);
