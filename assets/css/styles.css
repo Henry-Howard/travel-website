@@ -16,7 +16,7 @@
   --first-color-alt: hsl(var(--hue-color), 62%, 35%);
   --title-color: hsl(var(--hue-color), 62%, 40%);
   --text-color: hsl(var(--hue-color), 22%, 30%);
-  --text-color-light: hsl(var(--hue-color), 22%, 75%);
+  --text-color-light: hsl(var(--hue-color), 22%, 70%);
   --input-color: hsl(var(--hue-color), 30%, 95%);
   --body-color: hsl(var(--hue-color), 98%, 99%);
   --white-color: #FFF;
@@ -38,7 +38,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /*========== Margin-bottom ==========*/
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
@@ -105,7 +105,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
-/*=============== Modem ===============*/
+/*=============== Reset Html ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -842,7 +842,7 @@ input {
   }
 }
 
-/* Đối với các thiết bị trung bình (ipad) */
+/* Đối với các thiết bị trung bình (ipad mini) */
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
@@ -1007,7 +1007,7 @@ input {
   }
 }
 
-/* Đối với các thiết bị lớn (Laptop, PC) */
+/* Đối với các thiết bị lớn (ipad pro,Laptop, PC 11-12 inch) */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
@@ -1100,7 +1100,7 @@ input {
   }
 }
 
-/* Đối với màn hình trên điện thoại di động & máy tính để bàn */
+/* Đối với một số loại màn hình điện thoại di động & máy tính để bàn khác */
 @media screen and (min-height: 721px) {
   body {
     margin: 0;

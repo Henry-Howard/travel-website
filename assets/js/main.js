@@ -3,14 +3,14 @@ const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/*===== Hiện Menu =====*/
+/*===== Hiện Menu bar =====*/
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
   });
 }
 
-/*===== Ẩn Menu =====*/
+/*===== Ẩn Menu bar =====*/
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
@@ -38,19 +38,26 @@ window.addEventListener("scroll", scrollHeader);
 
 /*==================== Slider Khám phá ====================*/
 let swiper = new Swiper(".discover__container", {
-  slidesPerView: "1",
-  spaceBetween: 0,
-  autoplay: false,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
   coverflowEffect: {
     rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+    // slidesPerView: "1",
+    // spaceBetween: 0,
+    // autoplay: false,
+    // effect: "coverflow",
+    // grabCursor: true,
+    // centeredSlides: true,
+    // slidesPerView: "auto",
+    // coverflowEffect: {
+    //   rotate: 50,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows: true,
   },
 });
 
@@ -61,13 +68,13 @@ const videoFile = document.getElementById("video-file"),
 
 function playPause() {
   if (videoFile.paused) {
-    // Phát video
+    // Play video
     videoFile.play();
     // Thay đổi biểu tượng
     videoIcon.classList.add("ri-pause-line");
     videoIcon.classList.remove("ri-play-line");
   } else {
-    // Dừng video
+    // Pause video
     videoFile.pause();
     // Thay đổi biểu tượng
     videoIcon.classList.remove("ri-pause-line");
